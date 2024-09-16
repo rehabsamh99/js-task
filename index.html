@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <title>Document</title>
+</head>
+<body>
+  <section class="section">
+  <div class="circle"></div>
+  <!--NAVBAR--> 
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand col-8 " href="#"><img style="width: 10%;" src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item me-1">
+            <a class="nav-link text-secondary  active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item me-1">
+            <a class="nav-link text-secondary  active" href="#">Menu</a>
+          </li>
+          <li class="nav-item me-1">
+            <a class="nav-link text-secondary  active" href="#">What's New </a>
+          </li>
+        <li class="nav-item me-1">
+          <a class="nav-link text-secondary  active" href="#">Contact </a>
+        </li>
+      </Ul>
+      </div>
+    </div>
+  </nav>
+  <!--section1-->
+  <section class="section1">
+    
+      <div class="textBox">
+    <h2>It's not just a coffee <br>It's <span>Starbucks</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam 
+        assumenda, corrupti facilis necessitatibus numquam voluptatem ea odit nulla..</p>
+          <button class="btn btn-text-light">Learn More</button>
+        </div>
+        <div class="imgBox">
+          <img src="images/img1.png" alt="" class="Starbucks">
+        </div> 
+      </section>
+        <ul class="thumps">
+          <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('darkgreen')" ></li>
+          <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('lightpink')" ></li>
+          <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('deeppink')" ></li>
+        </ul> 
+        <ul class="sci">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+</section>
+
+<script type="text/javascript">
+  function imgSlider(anything){
+  document.querySelector('.Starbucks').src = anything ;
+  } 
+  function changeCircleColor(color){
+  const circle = document.querySelector('.circle');
+    circle.style.background = color ;
+  }
+</script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
